@@ -13,7 +13,7 @@
       background: #fafafa;
     }
     header {
-      background: #e2d7cd; /* Soft cream header */
+      background: #e2d7cd;
       color: #1a1a1a;
       padding: 2rem 1rem;
       text-align: center;
@@ -36,18 +36,24 @@
       padding-bottom: 0.3rem;
       margin-bottom: 1rem;
     }
-    .review {
+    .review, .interview-block {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
       margin-bottom: 2.5rem;
     }
-    .review img {
-      width: 100%;
-      max-height: 300px;
+    .review img, .interview-block img {
+      width: 200px;
+      height: auto;
       object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 1rem;
+      border-radius: 6px;
+      flex-shrink: 0;
     }
-    .review h3 {
-      margin-bottom: 0.2rem;
+    .review-content, .interview-content {
+      flex: 1;
+    }
+    .review h3, .interview-block h3 {
+      margin-top: 0;
       font-size: 1.3rem;
     }
     .quote {
@@ -82,84 +88,96 @@
 
     <div class="review">
       <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/%C2%A9-Alejandro-Olaya-Torres-620x264.webp" alt="Supperclub.tube interior">
-      <h3>
-        <a href="https://lhmagazine.co.uk/1994-supperclub-tube-review-a-cultural-journey-on-the-victoria-line/" target="_blank" rel="noopener noreferrer">
-          Supperclub.tube — A Cultural Journey on the Victoria Line
-        </a>
-      </h3>
-      <p class="quote">“Dining here feels as though you are part of a living exhibition.”</p>
-      <p>
-        Latin-American tasting menu in a decommissioned Victoria Line carriage with immersive cultural storytelling. 
-        <a href="https://lhmagazine.co.uk/1994-supperclub-tube-review-a-cultural-journey-on-the-victoria-line/" target="_blank" rel="noopener noreferrer">
-          Read full review →
-        </a>
-      </p>
+      <div class="review-content">
+        <h3>
+          <a href="https://lhmagazine.co.uk/1994-supperclub-tube-review-a-cultural-journey-on-the-victoria-line/" target="_blank" rel="noopener noreferrer">
+            Supperclub.tube — A Cultural Journey on the Victoria Line
+          </a>
+        </h3>
+        <p class="quote">“Dining here feels as though you are part of a living exhibition.”</p>
+        <p>
+          Latin-American tasting menu in a decommissioned Victoria Line carriage with immersive cultural storytelling. 
+          <a href="https://lhmagazine.co.uk/1994-supperclub-tube-review-a-cultural-journey-on-the-victoria-line/" target="_blank" rel="noopener noreferrer">
+            Read full review →
+          </a>
+        </p>
+      </div>
     </div>
 
     <div class="review">
       <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/Kahani-Spices-%C2%A9-Kahani-620x264.jpg" alt="Kahani Chelsea Interior">
-      <h3>
-        <a href="https://lhmagazine.co.uk/review-kahani-where-tradition-meets-innovation-in-indian-fine-dining/" target="_blank" rel="noopener noreferrer">
-          Kahani, Chelsea — Where Tradition Meets Innovation in Indian Fine Dining
-        </a>
-      </h3>
-      <p class="quote">“Each dish reflects its own tale of spice, tradition, and modern refinement.”</p>
-      <p>
-        Michelin-starred cuisine by Chef Peter Joseph, blending Indian roots with British ingredients. 
-        <a href="https://lhmagazine.co.uk/review-kahani-where-tradition-meets-innovation-in-indian-fine-dining/" target="_blank" rel="noopener noreferrer">
-          Read full review →
-        </a>
-      </p>
-    </div>
-
-    <div class="review">
-      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC03863-620x264.jpg" alt="Macellaio RC Soho interior">
-      <h3>
-        <a href="https://lhmagazine.co.uk/review-macellaio-rc-soho-a-butchers-theatre-of-italian-precision/" target="_blank" rel="noopener noreferrer">
-          Macellaio RC Soho — A Butcher’s Theatre of Italian Precision
-        </a>
-      </h3>
-      <p class="quote">“Precision is on full display, not just in the steakhouse’s theatrical butchery, but in every detail on the plate.”</p>
-      <p>
-        Celebrating Italian craftsmanship with a focus on dry-aged steak, Ligurian dishes, and a dramatic dining experience.
-        <a href="https://lhmagazine.co.uk/review-macellaio-rc-soho-a-butchers-theatre-of-italian-precision/" target="_blank" rel="noopener noreferrer">
-          Read full review →
-        </a>
-      </p>
+      <div class="review-content">
+        <h3>
+          <a href="https://lhmagazine.co.uk/review-kahani-where-tradition-meets-innovation-in-indian-fine-dining/" target="_blank" rel="noopener noreferrer">
+            Kahani, Chelsea — Where Tradition Meets Innovation in Indian Fine Dining
+          </a>
+        </h3>
+        <p class="quote">“Each dish reflects its own tale of spice, tradition, and modern refinement.”</p>
+        <p>
+          Michelin-starred cuisine by Chef Peter Joseph, blending Indian roots with British ingredients. 
+          <a href="https://lhmagazine.co.uk/review-kahani-where-tradition-meets-innovation-in-indian-fine-dining/" target="_blank" rel="noopener noreferrer">
+            Read full review →
+          </a>
+        </p>
+      </div>
     </div>
 
     <div class="review">
       <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/Como-Interior-620x264.jpg" alt="Como Garden Kensington">
-      <h3>
-        <a href="https://lhmagazine.co.uk/review-como-garden-italian-gastronomic-serenity-in-kensington/" target="_blank" rel="noopener noreferrer">
-          Como Garden — Italian Gastronomic Serenity in Kensington
-        </a>
-      </h3>
-      <p class="quote">“The Como Garden experience is one of humble indulgence.”</p>
-      <p>
-        Northern Italian tapas in a biophilic space inspired by Lake Como. 
-        <a href="https://lhmagazine.co.uk/review-como-garden-italian-gastronomic-serenity-in-kensington/" target="_blank" rel="noopener noreferrer">
-          Read full review →
-        </a>
-      </p>
+      <div class="review-content">
+        <h3>
+          <a href="https://lhmagazine.co.uk/review-como-garden-italian-gastronomic-serenity-in-kensington/" target="_blank" rel="noopener noreferrer">
+            Como Garden — Italian Gastronomic Serenity in Kensington
+          </a>
+        </h3>
+        <p class="quote">“The Como Garden experience is one of humble indulgence.”</p>
+        <p>
+          Northern Italian tapas in a biophilic space inspired by Lake Como. 
+          <a href="https://lhmagazine.co.uk/review-como-garden-italian-gastronomic-serenity-in-kensington/" target="_blank" rel="noopener noreferrer">
+            Read full review →
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC03863-620x264.jpg" alt="Macellaio RC Soho interior">
+      <div class="review-content">
+        <h3>
+          <a href="https://lhmagazine.co.uk/review-macellaio-rc-soho-a-butchers-theatre-of-italian-precision/" target="_blank" rel="noopener noreferrer">
+            Macellaio RC Soho — A Butcher’s Theatre of Italian Precision
+          </a>
+        </h3>
+        <p class="quote">“Precision is on full display, not just in the steakhouse’s theatrical butchery, but in every detail on the plate.”</p>
+        <p>
+          Celebrating Italian craftsmanship with a focus on dry-aged steak, Ligurian dishes, and a dramatic dining experience.
+          <a href="https://lhmagazine.co.uk/review-macellaio-rc-soho-a-butchers-theatre-of-italian-precision/" target="_blank" rel="noopener noreferrer">
+            Read full review →
+          </a>
+        </p>
+      </div>
     </div>
   </section>
 
   <section>
     <h2>Selected Editorial Interviews</h2>
-    <p>Interviews with changemakers and thought leaders across architecture, food innovation, and sustainability.</p>
-    <p>
-      <a href="https://raw.githubusercontent.com/sophieweir24/Selected_Editorial_Interviews.pdf/main/Soph%27s%20Interviews%20-%20combined%20smaller.pdf" target="_blank" rel="noopener noreferrer">
-        View selected interviews →
-      </a>
-    </p>
+    <div class="interview-block">
+      <img src="interviews-preview.jpg" alt="Interview Preview Image">
+      <div class="interview-content">
+        <p>Interviews with changemakers and thought leaders across architecture, food innovation, and sustainability.</p>
+        <p>
+          <a href="https://raw.githubusercontent.com/sophieweir24/Selected_Editorial_Interviews.pdf/main/Soph%27s%20Interviews%20-%20combined%20smaller.pdf" target="_blank" rel="noopener noreferrer">
+            View selected interviews →
+          </a>
+        </p>
+      </div>
+    </div>
   </section>
 
   <footer>
     <p>© 2025 Sophie Weir. All rights reserved. | 
-      <a href="https://raw.githubusercontent.com/sophieweir24/CV/main/SOPHIE%20WEIR%20CV.pdf" target="_blank" rel="noopener noreferrer">
-        Download CV
-      </a>
+      <a href="https://raw.githubusercontent.com/sophieweir24/CV/main/SOPHIE%20WEIR%20CV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a> | 
+      <a href="https://www.linkedin.com/in/sophie-weir-2a8969288" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </p>
   </footer>
 </body>
