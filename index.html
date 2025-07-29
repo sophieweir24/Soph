@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sophie Weir | Editorial Portfolio</title>
-  <link rel="icon" href="favicon-sw.ico" type="image/x-icon">
+  <link rel="icon" href="favicon-sw.png" type="image/png" />
   <style>
     body {
       font-family: 'Georgia', serif;
@@ -13,42 +13,44 @@
       margin: 0;
       background: #fafafa;
     }
-
     header {
       background: #e2d7cd;
       color: #1a1a1a;
       padding: 2rem 1rem;
       text-align: center;
     }
-
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
-
     header p {
       margin: 0.5rem 0 0;
       font-style: italic;
     }
-
     section {
       max-width: 1000px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 2rem 1.5rem;
+      background-color: #e7efe9;
+      border-radius: 10px;
     }
-
     h2 {
       border-bottom: 2px solid #ccc;
       padding-bottom: 0.3rem;
       margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
-
+    h2 img {
+      width: 28px;
+      height: 28px;
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
     }
-
     .card {
       background: #fff;
       border-radius: 8px;
@@ -56,63 +58,62 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
       transition: transform 0.3s ease;
     }
-
     .card:hover {
       transform: scale(1.02);
     }
-
     .card img {
       width: 100%;
       height: 180px;
       object-fit: cover;
-      transition: transform 0.3s ease;
     }
-
     .card-content {
       padding: 1rem;
     }
-
     .card-content h3 {
       margin-top: 0;
       font-size: 1.2rem;
     }
-
     .quote {
       font-style: italic;
       color: #444;
       margin: 0.5rem 0;
     }
-
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 0.5rem 1rem;
+    }
+    .gallery img {
+      height: 100px;
+      border-radius: 5px;
+    }
     .interview-block {
       display: flex;
       align-items: flex-start;
       gap: 1rem;
       margin-top: 2rem;
     }
-
     .interview-block img {
       width: 200px;
       height: auto;
       border-radius: 6px;
     }
-
     .interview-content {
       flex: 1;
     }
-
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #888;
       margin-top: 4rem;
       padding: 2rem 0;
+      background: #e7efe9;
     }
-
     a {
       color: #0066cc;
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
@@ -126,52 +127,67 @@
   </header>
 
   <section>
-    <h2>Restaurant Reviews</h2>
+    <h2><img src="section-icon.png" alt="Section Icon"> Restaurant Reviews</h2>
     <div class="grid">
 
+      <!-- Supperclub.tube -->
       <div class="card">
         <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/%C2%A9-Alejandro-Olaya-Torres-620x264.webp" alt="Supperclub.tube interior">
         <div class="card-content">
           <h3><a href="https://lhmagazine.co.uk/1994-supperclub-tube-review-a-cultural-journey-on-the-victoria-line/" target="_blank">Supperclub.tube — A Cultural Journey on the Victoria Line</a></h3>
           <p class="quote">“Dining here feels as though you are part of a living exhibition.”</p>
-          <p><a href="https://lhmagazine.co.uk/1994-supperclub-tube-review-a-cultural-journey-on-the-victoria-line/" target="_blank">Read full review →</a></p>
+        </div>
+        <div class="gallery">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/Chef-Bea-%C2%A9-Sam-Rockman.webp" alt="Chef Bea">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/%C2%A9-Sam-Rockman-3.webp" alt="Interior View">
         </div>
       </div>
 
+      <!-- Kahani -->
       <div class="card">
-        <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/Kahani-Spices-%C2%A9-Kahani-620x264.jpg" alt="Kahani Chelsea Interior">
+        <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/Kahani-Spices-%C2%A9-Kahani-620x264.jpg" alt="Kahani Interior">
         <div class="card-content">
-          <h3><a href="https://lhmagazine.co.uk/review-kahani-where-tradition-meets-innovation-in-indian-fine-dining/" target="_blank">Kahani, Chelsea — Where Tradition Meets Innovation in Indian Fine Dining</a></h3>
+          <h3><a href="https://lhmagazine.co.uk/review-kahani-where-tradition-meets-innovation-in-indian-fine-dining/" target="_blank">Kahani, Chelsea — Where Tradition Meets Innovation</a></h3>
           <p class="quote">“Each dish reflects its own tale of spice, tradition, and modern refinement.”</p>
-          <p><a href="https://lhmagazine.co.uk/review-kahani-where-tradition-meets-innovation-in-indian-fine-dining/" target="_blank">Read full review →</a></p>
+        </div>
+        <div class="gallery">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/Peter-Joseph-%C2%A9-Kahani.jpg" alt="Chef Peter Joseph">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/Tandoori_Broccoli-%C2%A9-Kahani.jpg" alt="Tandoori Broccoli">
         </div>
       </div>
 
+      <!-- Como Garden -->
       <div class="card">
-        <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/Como-Interior-620x264.jpg" alt="Como Garden Kensington">
+        <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/Como-Interior-620x264.jpg" alt="Como Garden Interior">
         <div class="card-content">
-          <h3><a href="https://lhmagazine.co.uk/review-como-garden-italian-gastronomic-serenity-in-kensington/" target="_blank">Como Garden — Italian Gastronomic Serenity in Kensington</a></h3>
+          <h3><a href="https://lhmagazine.co.uk/review-como-garden-italian-gastronomic-serenity-in-kensington/" target="_blank">Como Garden — Italian Gastronomic Serenity</a></h3>
           <p class="quote">“The Como Garden experience is one of humble indulgence.”</p>
-          <p><a href="https://lhmagazine.co.uk/review-como-garden-italian-gastronomic-serenity-in-kensington/" target="_blank">Read full review →</a></p>
+        </div>
+        <div class="gallery">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/Como-Interior-3.jpg" alt="Interior View 2">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/Insalata.jpg" alt="Insalata">
         </div>
       </div>
 
+      <!-- Macellaio -->
       <div class="card">
-        <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC03863-620x264.jpg" alt="Macellaio RC Soho interior">
+        <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC03863-620x264.jpg" alt="Macellaio RC Soho">
         <div class="card-content">
           <h3><a href="https://lhmagazine.co.uk/review-macellaio-rc-soho-a-butchers-theatre-of-italian-precision/" target="_blank">Macellaio RC Soho — A Butcher’s Theatre of Italian Precision</a></h3>
           <p class="quote">“Precision is on full display, not just in the steakhouse’s theatrical butchery, but in every detail on the plate.”</p>
-          <p><a href="https://lhmagazine.co.uk/review-macellaio-rc-soho-a-butchers-theatre-of-italian-precision/" target="_blank">Read full review →</a></p>
+        </div>
+        <div class="gallery">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC00029-HDR.jpg" alt="Butchery Table">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC00134.jpg" alt="Steak Presentation">
         </div>
       </div>
-
     </div>
   </section>
 
   <section>
-    <h2>Selected Editorial Interviews</h2>
+    <h2><img src="section-icon.png" alt="Section Icon"> Selected Editorial Interviews</h2>
     <div class="interview-block">
-      <img src="interviews-preview.jpg" alt="Interview Preview Image">
+      <img src="interviews-preview.jpg" alt="Interview Preview">
       <div class="interview-content">
         <p>Interviews with changemakers and thought leaders across architecture, food innovation, and sustainability.</p>
         <p><a href="https://raw.githubusercontent.com/sophieweir24/Selected_Editorial_Interviews.pdf/main/Soph%27s%20Interviews%20-%20combined%20smaller.pdf" target="_blank">View selected interviews →</a></p>
@@ -180,8 +196,8 @@
   </section>
 
   <footer>
-    <p>© 2025 Sophie Weir. All rights reserved. | 
-      <a href="https://raw.githubusercontent.com/sophieweir24/CV/main/SOPHIE%20WEIR%20CV.pdf" target="_blank">Download CV</a> | 
+    <p>© 2025 Sophie Weir. All rights reserved. |
+      <a href="https://raw.githubusercontent.com/sophieweir24/CV/main/SOPHIE%20WEIR%20CV.pdf" target="_blank">Download CV</a> |
       <a href="https://www.linkedin.com/in/sophie-weir-2a8969288" target="_blank">LinkedIn</a>
     </p>
   </footer>
