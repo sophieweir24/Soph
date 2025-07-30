@@ -96,6 +96,14 @@
       border-radius: 6px;
       flex-shrink: 0;
     }
+    /* Interview section styles */
+    .interviews {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem 1.5rem;
+      background-color: #e7efe9;
+      border-radius: 10px;
+    }
     .interview-block {
       display: flex;
       align-items: flex-start;
@@ -213,7 +221,7 @@
       </div>
     </div>
 
-    <!-- NEW: Smoke, Spice and Summer -->
+    <!-- Smoke, Spice and Summer -->
     <div class="card">
       <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/Transform-Your-Cooking-Experience-with-Our-Authentic-Lebanese-Hampers-e1753889799490-620x264.jpg" alt="Smoke, Spice and Summer">
       <div class="card-content">
@@ -224,7 +232,6 @@
         </h3>
         <p class="quote">“A vibrant celebration of flavours and culture brought right into your kitchen.”</p>
         <div class="scroll-gallery">
-          <!-- Removed the first duplicate main image -->
           <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/kebani.jpg" alt="Lebanese Dish 2">
           <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/Reciepe-image.jpg" alt="Lebanese Dish 3">
           <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/Mushroom-1.jpg" alt="Lebanese Dish 4">
@@ -235,7 +242,7 @@
   </div> <!-- CLOSE .grid -->
 </section> <!-- CLOSE Restaurant Reviews section -->
 
-<section>
+<section class="interviews">
   <h2><img src="section-icon.png" alt="">Selected Editorial Interviews</h2>
   <div class="interview-block">
     <img src="interviews-preview.jpg" alt="Interview preview">
@@ -259,24 +266,8 @@
 </section>
 
 <footer>
-  <p>© 2025 Sophie Weir. All rights reserved. | 
-    <a href="https://raw.githubusercontent.com/sophieweir24/CV/main/SOPHIE%20WEIR%20CV.pdf" target="_blank">Download CV</a> | 
-    <a href="https://www.linkedin.com/in/sophie-weir-2a8969288" target="_blank">LinkedIn</a>
-  </p>
+  &copy; 2025 Sophie Weir. All rights reserved.
 </footer>
-
-<script>
-  const sections = document.querySelectorAll("section");
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  }, { threshold: 0.2 });
-
-  sections.forEach(section => observer.observe(section));
-</script>
 
 </body>
 </html>
