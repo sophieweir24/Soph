@@ -233,32 +233,47 @@
 </div>
 
 
-  </div>
-</section>
-
-<section>
-  <h2><img src="section-icon.png" alt="">Interviews</h2>
-
+  <section>
+  <h2><img src="section-icon.png" alt="">Selected Editorial Interviews</h2>
   <div class="interview-block">
-    <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/luisa-ballin-620x350.jpg" alt="Luisa Ballin">
+    <img src="interviews-preview.jpg" alt="Interview preview">
     <div class="interview-content">
-      <h3>Luisa Ballin on Cross-Cultural Cuisine and Identity</h3>
-      <p>My conversation with the South American chef and artist about her food philosophy, migration, and the sensory power of food.</p>
-      <div class="interview-preview">
-        <h4>Excerpt:</h4>
-        <p>“To cook, for me, is to build a bridge between my past and the present moment...”</p>
-        <a href="https://lhmagazine.co.uk/luisa-ballin-interview/" target="_blank">Read full interview</a>
-      </div>
+      <p>Interviews with changemakers and thought leaders across architecture, food innovation, and sustainability.</p>
+      <p><a href="https://raw.githubusercontent.com/sophieweir24/Selected_Editorial_Interviews.pdf/main/Soph%27s%20Interviews%20-%20combined%20smaller.pdf" target="_blank">View full PDF →</a></p>
     </div>
   </div>
-
-  <!-- Add more interview blocks as needed -->
-
+  <div class="interview-preview">
+    <h4>Paule Béké – Founder of Douceurs d’Ivoire</h4>
+    <p>Exploring heritage, femininity, and food identity through Ivorian patisserie.</p>
+    <h4>Tosin Oshinowo – Architect, Lagos</h4>
+    <p>Reimagining West African public space through Afro-modernism and climate responsiveness.</p>
+    <h4>Dr. Alex Bond – Principal Curator, NHM</h4>
+    <p>How museums can centre biodiversity, decolonisation, and storytelling through exhibition design.</p>
+    <h4>Benedetta Cassinelli – Sustainable Food Entrepreneur</h4>
+    <p>Championing zero-waste and circular systems in restaurant operations and food logistics.</p>
+    <h4>Brixton Windmill Collective</h4>
+    <p>Reviving a historical flour mill as a community hub for urban agriculture and education.</p>
+  </div>
 </section>
-
 <footer>
-  <p>© 2025 Sophie Weir — All rights reserved</p>
+  <p>© 2025 Sophie Weir. All rights reserved. | 
+    <a href="https://raw.githubusercontent.com/sophieweir24/CV/main/SOPHIE%20WEIR%20CV.pdf" target="_blank">Download CV</a> | 
+    <a href="https://www.linkedin.com/in/sophie-weir-2a8969288" target="_blank">LinkedIn</a>
+  </p>
 </footer>
+
+<script>
+  const sections = document.querySelectorAll("section");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(section => observer.observe(section));
+</script>
 
 </body>
 </html>
