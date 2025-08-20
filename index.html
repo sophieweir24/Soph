@@ -241,18 +241,14 @@
 
     <!-- Smoke, Spice and Summer -->
     <div class="card">
-      <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/Transform-Your-Cooking-Experience-with-Our-Authentic-Lebanese-Hampers-e1753889799490-620x264.jpg" alt="Smoke, Spice and Summer">
+      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/06/Smoke-Spice-and-Summer-1-620x264.jpg" alt="Smoke, Spice and Summer">
       <div class="card-content">
-        <h3>
-          <a href="https://restaurantindustry.co.uk/2025/07/30/smoke-spice-and-summer-a-lebanese-feast-at-home/" target="_blank">
-            Smoke, Spice and Summer — A Lebanese Feast at Home
-          </a>
-        </h3>
-        <p class="quote">“A vibrant celebration of flavours and culture brought right into your kitchen.”</p>
+        <h3><a href="https://lhmagazine.co.uk/review-smoke-spice-and-summer-fusion-of-flavours-and-visuals-in-east-london/" target="_blank">Smoke, Spice and Summer — Fusion of Flavours and Visuals in East London</a></h3>
+        <p class="quote">“The venue is alive with colour, aroma, and energy.”</p>
         <div class="scroll-gallery">
-          <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/kebani.jpg" alt="Lebanese Dish 2">
-          <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/Reciepe-image.jpg" alt="Lebanese Dish 3">
-          <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/Mushroom-1.jpg" alt="Lebanese Dish 4">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/06/Smoke-Spice-and-Summer-2.jpg" alt="Smoke, Spice Image 1">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/06/Smoke-Spice-and-Summer-3.jpg" alt="Smoke, Spice Image 2">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/06/Smoke-Spice-and-Summer-4.jpg" alt="Smoke, Spice Image 3">
         </div>
       </div>
     </div>
@@ -262,45 +258,67 @@
 
 <!-- Interviews Section -->
 <section class="interviews">
-  <h2><img src="section-icon.png" alt="">Selected Editorial Interviews</h2>
+  <h2><img src="section-icon.png" alt="">Interviews</h2>
+
+  <!-- Interview 1 -->
   <div class="interview-block">
-    <img src="interviews-preview.jpg" alt="Interview preview">
+    <img src="interview1.jpg" alt="Interview 1">
     <div class="interview-content">
-      <p>Interviews with changemakers and thought leaders across architecture, food innovation, and sustainability.</p>
-      <p><a href="https://raw.githubusercontent.com/sophieweir24/Selected_Editorial_Interviews.pdf/main/Soph%27s%20Interviews%20-%20combined%20smaller.pdf" target="_blank">View full PDF →</a></p>
+      <p class="quote">“An engaging conversation about creativity and craft.”</p>
+      <div class="interview-preview">
+        <h4>Interview Title</h4>
+        <p>Preview of the interview text…</p>
+      </div>
     </div>
   </div>
-  <div class="interview-preview">
-    <h4>Paule Béké – Founder of Douceurs d’Ivoire</h4>
-    <p>Exploring heritage, femininity, and food identity through Ivorian patisserie.</p>
-    <h4>Tosin Oshinowo – Architect, Lagos</h4>
-    <p>Reimagining West African public space through Afro-modernism and climate responsiveness.</p>
-    <h4>Dr. Alex Bond – Principal Curator, NHM</h4>
-    <p>How museums can centre biodiversity, decolonisation, and storytelling through exhibition design.</p>
-    <h4>Benedetta Cassinelli – Sustainable Food Entrepreneur</h4>
-    <p>Championing zero-waste and circular systems in restaurant operations and food logistics.</p>
-    <h4>Brixton Windmill Collective</h4>
-    <p>Reviving a historical flour mill as a community hub for urban agriculture and education.</p>
+
+  <!-- Interview 2 -->
+  <div class="interview-block">
+    <img src="interview2.jpg" alt="Interview 2">
+    <div class="interview-content">
+      <p class="quote">“Insights into design, space, and vision.”</p>
+      <div class="interview-preview">
+        <h4>Interview Title</h4>
+        <p>Preview of the interview text…</p>
+      </div>
+    </div>
   </div>
+
 </section>
 
 <!-- CV Section -->
 <section class="cv-section">
-  <h2><img src="section-icon.png" alt="">My CV</h2>
+  <h2><img src="section-icon.png" alt="CV icon">My CV</h2>
   <p>
     <a href="https://drive.google.com/file/d/1Y29ZBdrfGj5-OhZD9qA9vLfP__L1G4D3/view?usp=drive_link" target="_blank" style="font-weight:bold; color:#0066cc;">
       View or download my CV →
     </a>
   </p>
 
-  <!-- Optional: Embedded PDF preview -->
+  <!-- Embedded PDF preview -->
   <iframe src="https://drive.google.com/file/d/1Y29ZBdrfGj5-OhZD9qA9vLfP__L1G4D3/preview" allow="autoplay"></iframe>
 </section>
-  
+
 <footer>
-  &copy; 2025 Sophie Weir. All rights reserved.<br>
-  <a href="https://linkedin.com/in/sophie-weir-2a8969288" target="_blank">LinkedIn</a>
+  &copy; 2025 Sophie Weir | 
+  <a href="mailto:sophie@example.com">Email</a> | 
+  <a href="https://www.linkedin.com/in/sophieweir" target="_blank">LinkedIn</a>
 </footer>
+
+<script>
+  // Fade-in animation for section titles
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
+  });
+</script>
 
 </body>
 </html>
