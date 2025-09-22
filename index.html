@@ -14,13 +14,13 @@
       background: #fafafa;
     }
     header {
-      background: #e2d7cd;
+      background: #f7f4f0;
       color: #1a1a1a;
       padding: 2rem 1rem;
       text-align: center;
     }
     header h1 {
-      margin: 0;
+      margin: 0 0 0.5rem 0;
       font-size: 2.5rem;
     }
     header p {
@@ -96,7 +96,6 @@
       border-radius: 6px;
       flex-shrink: 0;
     }
-    /* Interview section styles */
     .interviews {
       max-width: 1000px;
       margin: 2rem auto;
@@ -114,11 +113,12 @@
       width: 200px;
       height: auto;
       border-radius: 6px;
+      flex-shrink: 0;
     }
     .interview-content {
       flex: 1;
     }
-    .interview-preview {
+    .interview-preview article {
       margin-top: 1.5rem;
     }
     .interview-preview h4 {
@@ -139,163 +139,183 @@
     a:hover {
       text-decoration: underline;
     }
+    /* Header Buttons */
+    .header-buttons a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      margin: 0.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .linkedin-button { background-color: #0077b5; color: white; }
+    .cv-button { background-color: #555555; color: white; }
   </style>
 </head>
 <body>
 
-<header style="text-align: center; padding: 2rem; background-color: #f7f4f0; color: #1a1a1a;">
-  <h1 style="margin-bottom: 0.5rem;">Sophie Weir</h1>
-  <p style="font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem;">
-    Editorial Writer with a Curiosity for People and Place
-  </p>
+<header>
+  <h1>Sophie Weir</h1>
+  <p style="font-weight: bold; font-size: 1.2rem;">Editorial Writer with a Curiosity for People and Place</p>
   <p style="max-width: 700px; margin: 0 auto 1.5rem; line-height: 1.6;">
     I’ve contributed interviews, reviews, and cultural features across sectors including food, travel, architecture, and design. My work often explores the people behind creative spaces — from chefs and curators to architects and entrepreneurs — with a focus on storytelling that connects place, identity, and experience.
   </p>
-
-  <!-- LinkedIn and CV Buttons -->
-  <div style="margin-top: 1rem;">
-    <a href="https://www.linkedin.com/in/sophie-weir-2a8969288/" target="_blank"
-       style="display: inline-block; background-color: #0077b5; color: white; text-decoration: none; padding: 0.6rem 1.2rem; margin: 0.5rem; border-radius: 8px; font-weight: bold;">
-       LinkedIn
-    </a>
-    <a href="https://drive.google.com/file/d/1Y29ZBdrfGj5-OhZD9qA9vLfP__L1G4D3/preview" target="_blank"
-       style="display: inline-block; background-color: #555555; color: white; text-decoration: none; padding: 0.6rem 1.2rem; margin: 0.5rem; border-radius: 8px; font-weight: bold;">
-       Download CV
-    </a>
+  <div class="header-buttons">
+    <a href="https://www.linkedin.com/in/sophie-weir-2a8969288/" target="_blank" class="linkedin-button">LinkedIn</a>
+    <a href="https://drive.google.com/file/d/1Y29ZBdrfGj5-OhZD9qA9vLfP__L1G4D3/preview" target="_blank" class="cv-button">Download CV</a>
   </div>
 </header>
 
-
+<!-- Restaurant Reviews Section -->
 <section>
   <h2><img src="section-icon.png" alt="">Restaurant Reviews</h2>
   <div class="grid">
 
     <!-- Supperclub -->
-    <div class="card">
-      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/%C2%A9-Alejandro-Olaya-Torres-620x264.webp" alt="Supperclub">
+    <article class="card">
+      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/%C2%A9-Alejandro-Olaya-Torres-620x264.webp" alt="Supperclub" loading="lazy">
       <div class="card-content">
-        <h3>
-          <a href="https://lhmagazine.co.uk/1994-supperclub-tube-review-a-cultural-journey-on-the-victoria-line/" target="_blank">
-            Supperclub.tube — A Cultural Journey on the Victoria Line
-          </a>
-        </h3>
+        <h3><a href="https://lhmagazine.co.uk/1994-supperclub-tube-review-a-cultural-journey-on-the-victoria-line/" target="_blank">Supperclub.tube — A Cultural Journey on the Victoria Line</a></h3>
         <p class="quote">“Dining here feels as though you are part of a living exhibition.”</p>
         <div class="scroll-gallery">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/IMG_1915.webp" alt="Supperclub Chef">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/%C2%A9-Sam-Rockman-3.webp" alt="Supperclub Interior">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/%C2%A9-Sam-Rockman.webp" alt="Chef Bea Service">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/%C2%A9-Luke-Agbaimoni-2.webp" alt="Supperclub Train Car">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/IMG_1915.webp" alt="Supperclub Chef" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/%C2%A9-Sam-Rockman-3.webp" alt="Supperclub Interior" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/%C2%A9-Sam-Rockman.webp" alt="Chef Bea Service" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/01/%C2%A9-Luke-Agbaimoni-2.webp" alt="Supperclub Train Car" loading="lazy">
         </div>
       </div>
-    </div>
+    </article>
 
     <!-- Kahani -->
-    <div class="card">
-      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/Kahani-Spices-%C2%A9-Kahani-620x264.jpg" alt="Kahani">
+    <article class="card">
+      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/Kahani-Spices-%C2%A9-Kahani-620x264.jpg" alt="Kahani" loading="lazy">
       <div class="card-content">
         <h3><a href="https://lhmagazine.co.uk/review-kahani-where-tradition-meets-innovation-in-indian-fine-dining/" target="_blank">Kahani, Chelsea — Where Tradition Meets Innovation in Indian Fine Dining</a></h3>
         <p class="quote">“Each dish reflects its own tale of spice, tradition, and modern refinement.”</p>
         <div class="scroll-gallery">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/Peter-Joseph-%C2%A9-Kahani.jpg" alt="Kahani Image 1">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/Tandoori_Broccoli-%C2%A9-Kahani.jpg" alt="Kahani Image 2">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/G-Cheesecake-%C2%A9-Kahani.jpg" alt="Kahani Image 3">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/Kahani-Floor-%C2%A9-Kahani.jpg" alt="Kahani Image 4">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/Peter-Joseph-%C2%A9-Kahani.jpg" alt="Kahani Image 1" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/Tandoori_Broccoli-%C2%A9-Kahani.jpg" alt="Kahani Image 2" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/G-Cheesecake-%C2%A9-Kahani.jpg" alt="Kahani Image 3" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/02/Kahani-Floor-%C2%A9-Kahani.jpg" alt="Kahani Image 4" loading="lazy">
         </div>
       </div>
-    </div>
+    </article>
 
     <!-- Como Garden -->
-    <div class="card">
-      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/Como-Interior-620x264.jpg" alt="Como Garden">
+    <article class="card">
+      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/Como-Interior-620x264.jpg" alt="Como Garden" loading="lazy">
       <div class="card-content">
-        <h3>
-          <a href="https://lhmagazine.co.uk/review-como-garden-italian-gastronomic-serenity-in-kensington/" target="_blank">
-            Como Garden — Italian Gastronomic Serenity in Kensington
-          </a>
-        </h3>
+        <h3><a href="https://lhmagazine.co.uk/review-como-garden-italian-gastronomic-serenity-in-kensington/" target="_blank">Como Garden — Italian Gastronomic Serenity in Kensington</a></h3>
         <p class="quote">“The Como Garden experience is one of humble indulgence.”</p>
         <div class="scroll-gallery">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/ARANCINI.jpg" alt="Arancini">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/Insalata.jpg" alt="Insalata">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/BLACK-TRUFFLE-TAG-scaled.jpg" alt="Black Truffle">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/Como-Interior-3.jpg" alt="Como Interior">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/ARANCINI.jpg" alt="Arancini" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/Insalata.jpg" alt="Insalata" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/BLACK-TRUFFLE-TAG-scaled.jpg" alt="Black Truffle" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/05/Como-Interior-3.jpg" alt="Como Interior" loading="lazy">
         </div>
       </div>
-    </div>
+    </article>
 
     <!-- Macellaio -->
-    <div class="card">
-      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC03863-620x264.jpg" alt="Macellaio">
+    <article class="card">
+      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC03863-620x264.jpg" alt="Macellaio" loading="lazy">
       <div class="card-content">
         <h3><a href="https://lhmagazine.co.uk/review-macellaio-rc-soho-a-butchers-theatre-of-italian-precision/" target="_blank">Macellaio RC Soho — A Butcher’s Theatre of Italian Precision</a></h3>
         <p class="quote">“Precision is on full display, not just in the steakhouse’s theatrical butchery, but in every detail on the plate.”</p>
         <div class="scroll-gallery">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC00029-HDR.jpg" alt="Macellaio Image 1">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC00134.jpg" alt="Macellaio Image 2">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC06246-e1753781916720.jpg" alt="Macellaio Image 3">
-          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC00599.jpg" alt="Macellaio Image 4">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC00029-HDR.jpg" alt="Macellaio Image 1" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC00134.jpg" alt="Macellaio Image 2" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC06246-e1753781916720.jpg" alt="Macellaio Image 3" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/07/DSC00599.jpg" alt="Macellaio Image 4" loading="lazy">
         </div>
       </div>
-    </div>
+    </article>
 
     <!-- Smoke, Spice and Summer -->
-    <div class="card">
-      <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/Transform-Your-Cooking-Experience-with-Our-Authentic-Lebanese-Hampers-e1753889799490-620x264.jpg" alt="Smoke, Spice and Summer">
+    <article class="card">
+      <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/Transform-Your-Cooking-Experience-with-Our-Authentic-Lebanese-Hampers-e1753889799490-620x264.jpg" alt="Smoke, Spice and Summer" loading="lazy">
       <div class="card-content">
-        <h3>
-          <a href="https://restaurantindustry.co.uk/2025/07/30/smoke-spice-and-summer-a-lebanese-feast-at-home/" target="_blank">
-            Smoke, Spice and Summer — A Lebanese Feast at Home
-          </a>
-        </h3>
+        <h3><a href="https://restaurantindustry.co.uk/2025/07/30/smoke-spice-and-summer-a-lebanese-feast-at-home/" target="_blank">Smoke, Spice and Summer — A Lebanese Feast at Home</a></h3>
         <p class="quote">“A vibrant celebration of flavours and culture brought right into your kitchen.”</p>
         <div class="scroll-gallery">
-          <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/kebani.jpg" alt="Lebanese Dish 2">
-          <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/Reciepe-image.jpg" alt="Lebanese Dish 3">
-          <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/Mushroom-1.jpg" alt="Lebanese Dish 4">
+          <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/kebani.jpg" alt="Lebanese Dish 2" loading="lazy">
+          <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/Recipe-image.jpg" alt="Lebanese Dish 3" loading="lazy">
+          <img src="https://restaurantindustry.co.uk/wp-content/uploads/2025/07/Mushroom-1.jpg" alt="Lebanese Dish 4" loading="lazy">
         </div>
       </div>
-    </div>
-    
-<!-- ZIMA -->
-<div class="card">
-  <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/Credit-Lateef-Okunnu-2-620x264.jpg" alt="ZIMA">
-  <div class="card-content">
-    <h3>
-      <a href="https://lhmagazine.co.uk/review-zima-notting-hill-a-modern-stage-for-russian-hospitality/" target="_blank">
-        ZIMA Notting Hill — A Modern Stage for Russian Hospitality
-      </a>
-    </h3>
-    <p class="quote">“Dining with Russian soul, enhanced by art, vodka, seasonality, and a sense of memorability.”</p>
-    <div class="scroll-gallery">
-      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/Zima-Notting-Hill.jpg" alt="ZIMA Interior">
-      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/ZIMA-DEC-2024-@lateef.photography-104.jpg" alt="ZIMA Food">
-      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/Pickle-selection-2.jpg" alt="Pickle Selection">
-      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/Cocktails-summer-2025-007.jpg" alt="Summer Cocktails">
-    </div>
-  </div>
-</div>
+    </article>
+
+    <!-- ZIMA -->
+    <article class="card">
+      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/Credit-Lateef-Okunnu-2-620x264.jpg" alt="ZIMA" loading="lazy">
+      <div class="card-content">
+        <h3><a href="https://lhmagazine.co.uk/review-zima-notting-hill-a-modern-stage-for-russian-hospitality/" target="_blank">ZIMA Notting Hill — A Modern Stage for Russian Hospitality</a></h3>
+        <p class="quote">“Dining with Russian soul, enhanced by art, vodka, seasonality, and a sense of memorability.”</p>
+        <div class="scroll-gallery">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/Zima-Notting-Hill.jpg" alt="ZIMA Interior" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/ZIMA-DEC-2024-@lateef.photography-104.jpg" alt="ZIMA Food" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/Pickle-selection-2.jpg" alt="Pickle Selection" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/Cocktails-summer-2025-007.jpg" alt="Summer Cocktails" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <!-- Brasserie Marie Amsterdam -->
+    <article class="card">
+      <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/Brasserie-Marie-13-e1758186267202-620x264.jpg" alt="Brasserie Marie Amsterdam" loading="lazy">
+      <div class="card-content">
+        <h3><a href="https://lhmagazine.co.uk/review-brasserie-marie-amsterdam-parisian-elegance-along-the-amstel/" target="_blank">Brasserie Marie Amsterdam – Parisian Elegance Along the Amstel</a></h3>
+        <p class="quote">“Marie strikes a delicate balance between timeless elegance and modern sensibility”</p>
+        <div class="scroll-gallery">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/01.-Exterior_De-L_Europe-Amsterdam.jpg" alt="Brasserie Marie Image 1" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/Brasserie-Marie-5.jpg" alt="Brasserie Marie Image 2" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/Brasserie-Marie-10.jpg" alt="Brasserie Marie Image 3" loading="lazy">
+          <img src="https://lhmagazine.co.uk/wp-content/uploads/2025/09/Chapter-1896-4.jpg" alt="Brasserie Marie Image 4" loading="lazy">
+        </div>
+      </div>
+    </article>
 
   </div> <!-- CLOSE .grid -->
-</section> <!-- CLOSE Restaurant Reviews section -->
+</section>
 
+<!-- Interviews Section -->
 <section class="interviews">
   <h2><img src="section-icon.png" alt="">Selected Editorial Interviews</h2>
-  <div class="interview-block">
-    <img src="interviews-preview.jpg" alt="Interview preview">
+
+  <!-- Main Interview Preview -->
+  <article class="interview-block">
+    <img src="interviews-preview.jpg" alt="Interview preview" loading="lazy">
     <div class="interview-content">
       <p>Interviews with changemakers and thought leaders across architecture, food innovation, and sustainability.</p>
-      <p><a href="https://raw.githubusercontent.com/sophieweir24/Selected_Editorial_Interviews.pdf/main/Soph%27s%20Interviews%20-%20combined%20smaller.pdf" target="_blank">View full PDF →</a></p>
+      <p>
+        <a href="https://raw.githubusercontent.com/sophieweir24/Selected_Editorial_Interviews.pdf/main/Soph%27s%20Interviews%20-%20combined%20smaller.pdf" target="_blank">
+          View full PDF →
+        </a>
+      </p>
     </div>
-  </div>
+  </article>
+
+  <!-- Individual Interview Previews -->
   <div class="interview-preview">
-    <h4>Paule Béké – Founder of Douceurs d’Ivoire</h4>
-    <p>Exploring heritage, femininity, and food identity through Ivorian patisserie.</p>
-    <h4>Tosin Oshinowo – Architect, Lagos</h4>
-    <p>Reimagining West African public space through Afro-modernism and climate responsiveness.</p>
-    <h4>Dr. Alex Bond – Principal Curator, NHM</h4>
-    <p>How museums can centre biodiversity, decolonisation, and storytelling through exhibition design.</p>
-    <h4>Benedetta Cassinari – Designer</h4>
-    <p>Integrating tactile experience and sustainability into luxury ceramics and furniture.</p>
+    <article>
+      <h4>Paule Béké – Founder of Douceurs d’Ivoire</h4>
+      <p>Exploring heritage, femininity, and food identity through Ivorian patisserie.</p>
+    </article>
+
+    <article>
+      <h4>Tosin Oshinowo – Architect, Lagos</h4>
+      <p>Reimagining West African public space through Afro-modernism and climate responsiveness.</p>
+    </article>
+
+    <article>
+      <h4>Dr. Alex Bond – Principal Curator, NHM</h4>
+      <p>How museums can centre biodiversity, decolonisation, and storytelling through exhibition design.</p>
+    </article>
+
+    <article>
+      <h4>Benedetta Cassinari – Designer</h4>
+      <p>Integrating tactile experience and sustainability into luxury ceramics and furniture.</p>
+    </article>
   </div>
 </section>
 
@@ -304,7 +324,7 @@
 </footer>
 
 <script>
-  // Intersection observer for animations
+  // Intersection observer for section animations
   const sections = document.querySelectorAll('section');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -313,7 +333,7 @@
       }
     });
   }, { threshold: 0.3 });
-  
+
   sections.forEach(section => observer.observe(section));
 </script>
 
